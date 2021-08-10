@@ -16,8 +16,7 @@ library(medrc)
 
 ################## Tests avec mes données
 library("readxl")
-setwd("P:/EPI/donnees chaudes/insectarium/Mathilda/Evol Exp/Biotests/sur_G10")
-biotestsG10plq <- read_excel("Biotests_plaques_G10.xlsx", "Feuil1")
+biotestsG10plq <- read_excel("data/Biotests_plaques_G10.xlsx", "Feuil1")
 #On enlève les cases vides
 biotestsG10plq<-biotestsG10plq[complete.cases(biotestsG10plq[]),]
 
